@@ -13,23 +13,24 @@ var userInput = [];
      if(clicks == 1) {
        $(this).removeClass("selected");
 
-       click1 = event.target.innerHTML;
+       click1 = event.target.children[0].src;
+       console.log(click1);
        clicks++;
     } else if(clicks == 2) {
       $(this).removeClass("selected")
-      click2 = event.target.innerHTML;
-      console.log(click1);
-      console.log(click2);
+      click2 = event.target.children[0].src;
+      console.log("click1 = "+click1);
+      console.log("click after target"+click2);
       clicks = 1;
-      if(click1 === click2) {
+
+      if(click1===click2) {
         console.log("SNAP!");
-
-
 
       } else {
         console.log("NOT SNAP!");
 
       }
+
     }
     console.log(clicks);
     return clicks;

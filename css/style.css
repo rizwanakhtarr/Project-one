@@ -30,21 +30,34 @@ section {
 }
 
 section div {
-  background-color:yellow;
+  background-color:white;
   float: left;
   height: 15vw;
   margin: 1%;
   width: 10%;
   text-align: center;
+  border: 1px solid black;
 }
 
 h1 {
   text-align: center;
 }
 
-.selected {
+img {
+  width: 100%;
 
+  background-size:cover;
 
-  color: yellow;
+}
+
+p {
+  color: white;
+}
+
+.selected img {
+
+  display: none;
+  color: white;
+  border-color: black;
 
 }
