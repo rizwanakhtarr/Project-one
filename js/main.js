@@ -26,6 +26,7 @@ var userInput = [];
       if(click1===click2) {
         console.log("SNAP!");
 
+        
       } else {
         console.log("NOT SNAP!");
 
@@ -36,6 +37,11 @@ var userInput = [];
     return clicks;
   });
 
+
+
+$(".reset").click(function() {
+  location.reload();
+});
 
 
 });
