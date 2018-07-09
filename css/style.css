@@ -1,25 +1,49 @@
-.container {
+/* .container {
   border: 1px solid black;
   display: flex;
-  flex-wrap: nowrap;
+
+  flex-direction: row;
 }
 
-.container > div {
-  margin:10px;
+.container div {
+
   background-color: yellow;
   font-size: 30px;
   text-align: center;
-  width: 100px;
+  border: 2px solid black;
+  width: 23%;
+}
+ */
+body {
+  margin:0;
 }
 
-div {
+.container {
+  overflow: hidden;
+  margin:0px 100px 0px 100px;
+  border: 1px solid black;
+}
 
-height:250px;
-width: 900px
+section {
+  margin: -1%;
+  padding: 20px;
+}
 
+section div {
+  background-color:yellow;
+  float: left;
+  height: 15vw;
+  margin: 1%;
+  width: 10%;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
 }
 
 .selected {
+
 
   color: yellow;
 
