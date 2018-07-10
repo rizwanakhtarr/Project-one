@@ -1,0 +1,98 @@
+.containerHeader {
+  display: flex;
+  justify-content: space-around;
+
+
+}
+
+body {
+  margin:0;
+  background: url("../images/avengersbackground.jpg");
+}
+
+.container {
+  overflow: hidden;
+  margin:0px 100px 0px 100px;
+
+}
+
+section {
+  margin: -1%;
+  padding: 20px;
+}
+
+section div {
+  background-color: #E8E8E8;
+  float: left;
+  height: 15vw;
+  margin: 1%;
+  width: 10%;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+img {
+  width: 100%;
+
+  background-size:cover;
+
+}
+
+p {
+  color: #E8E8E8;
+}
+
+.selected img {
+
+  display: none;
+  color: white;
+  border-color: black;
+
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background:url("../images/avengersbackground.jpg");
+  
+
+}
+
+.modal-content {
+  background-color: black;
+  margin: 20% auto;
+  width: 70%;
+  padding: 20px;
+  box-shadow: 0 5px 7px 0;
+
+}
+
+.closeBtn {
+  color: yellow;
+  float: right;
+  font-size: 30px;
+}
+
+.timer {
+  color: white;
+  margin-top: 50px;
+}
+
+.logo {
+  width: auto;
+  height: 100px;
+
+}
