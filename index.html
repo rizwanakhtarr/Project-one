@@ -11,31 +11,48 @@
     <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
-    <h1>SnapAvengers</h1>
-    <div class="timer">Timer</div>
-
+    <div class="containerHeader">
+      <div><img src="images\avengersassemble.png" class="logo"></div>
+      <div id="Timer" class="timer">
+      Timer: <span>30</span> Seconds
+      </div>
+    </div>
     <div class="container">
       <section>
-        <div class="cards capt"><img src="images\captain america.jpg"  > <p>?</p></div>
-        <div class="cards two"><img src="images\ironman.png" ><p>?</p></div>
-        <div class="cards one"><img src="images\Hulk.png"><p>?</p></div>
-        <div class="cards two"><img src="images\Hulk.png"><p>?</p></div>
+        <div class="cards capt"><img src="images\captain america.jpg"  > <p></p></div>
+        <div class="cards ironman"><img src="images\ironman.png" ><p>?</p></div>
+        <div class="cards Hulk"><img src="images\Hulk.png"><p>?</p></div>
+        <div class="cards Hulk"><img src="images\Hulk.png"><p>?</p></div>
         <div class="cards capt"><img src="images\captain america.jpg"><p>?</p></div>
-        <div class="cards two"><img src="images\ironman.png" ><p>?</p></div>
-        <div class="cards one"><img src="images\black panther.jpg"><p>?</p></div>
-        <div class="cards two"><img src="images\wintersoldier.jpg"><p>?</p></div>
-        <div class="cards one"><img src="images\black panther.jpg"><p>?</p></div>
-        <div class="cards two"><img src="images\thor.jpg"><p>?</p></div>
-        <div class="cards one"><img src="images\spiderman.png"><p>?</p></div>
-        <div class="cards two"><img src="images\thor.jpg"><p>?</p></div>
-        <div class="cards one"><img src="images\hawkeye.jpg"><p>?</p></div>
-        <div class="cards two"><img src="images\hawkeye.jpg"><p>?</p></div>
-        <div class="cards one"><img src="images\wintersoldier.jpg"><p>?</p></div>
-        <div class="cards two"><img src="images\spiderman.png"><p>?</p></div>
+        <div class="cards ironman"><img src="images\ironman.png" ><p>?</p></div>
+        <div class="cards bpanther"><img src="images\black panther.jpg"><p>?</p></div>
+        <div class="cards wintersoldier"><img src="images\wintersoldier.jpg"><p>?</p></div>
+        <div class="cards bpanther"><img src="images\black panther.jpg"><p>?</p></div>
+        <div class="cards thor"><img src="images\thor.jpg"><p>?</p></div>
+        <div class="cards spiderman"><img src="images\spiderman.png"><p>?</p></div>
+        <div class="cards thor"><img src="images\thor.jpg"><p>?</p></div>
+        <div class="cards hawkeye"><img src="images\hawkeye.jpg"><p>?</p></div>
+        <div class="cards hawkeye"><img src="images\hawkeye.jpg"><p>?</p></div>
+        <div class="cards wintersoldier"><img src="images\wintersoldier.jpg"><p>?</p></div>
+        <div class="cards spiderman"><img src="images\spiderman.png"><p>?</p></div>
     </div>
 
-    <!-- <div><span id="time">00:30</span> Seconds!</div> -->
-    <div class="reset"><button>Reset Game</button>
+    <button id = "modalBtn" class="button">Click Here</button>
+
+    <div id="simpleModal" class="modal">
+      <div class="modal-content">
+        <span class="closeBtn">&times</span>
+        <h1>Congratulations for Completing the Game Successfully!</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+      </div>
+    </div>
+    <p id="demo"></p>
+    <div class="reset"><button onclick="countdownTimeStart()">Reset Game</button>
 
     </div>
   </body>
