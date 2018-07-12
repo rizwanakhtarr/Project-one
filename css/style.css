@@ -5,9 +5,10 @@
 
 }
 
-body {
+body  {
   margin:0;
   background: url("../images/avengersbackground.jpg");
+
 }
 
 .container {
@@ -21,15 +22,14 @@ section {
   padding: 20px;
 }
 
+
+
 section div {
-  background-color: #E8E8E8;
+
   float: left;
   height: 15vw;
   margin: 1%;
   width: 10%;
-  text-align: center;
-  border: 1px solid black;
-  border-radius: 5px;
   display: inline-block;
 }
 
@@ -38,10 +38,35 @@ h1 {
   color: white;
 }
 
+.resetButton {
+  width: auto;
+  height: 40px;
+  margin-top: 86px;
+  border: 1px solid #c0c0c0;
+  padding: 8px;
+  background: black;
+  margin-left: -70px;
+
+}
+
+.timeLeft {
+  width: auto;
+  height: 30px;
+  margin-left: 49px;
+  margin-bottom: -25px;
+  padding: 8px;
+  background: black;
+
+}
+
 img {
   width: 100%;
-
+  display: block;
+  overflow: auto;
   background-size:cover;
+  border-radius: 5px;
+  margin-top: 20px;
+
 
 }
 
@@ -49,12 +74,16 @@ p {
   color: #E8E8E8;
 }
 
-.selected img {
+
+
+.selected img  {
 
   display: none;
-  color: white;
-  border-color: black;
 
+}
+
+.matched {
+  opacity: 0.5;
 }
 
 .modal {
@@ -67,32 +96,125 @@ p {
   width: 100%;
   overflow: auto;
   background:url("../images/avengersbackground.jpg");
-  
+  left: -3px;
+  top: -10px;
 
 }
 
+
+
 .modal-content {
   background-color: black;
-  margin: 20% auto;
-  width: 70%;
-  padding: 20px;
-  box-shadow: 0 5px 7px 0;
+  margin: 10% 25%;
+  width: 60%;
+  padding: 10px;
+  border:1px solid #c0c0c0;
+  height: 70%;
 
 }
 
 .closeBtn {
-  color: yellow;
+  color:#c0c0c0 ;
   float: right;
-  font-size: 30px;
+  font-size: 50px;
+
+}
+
+.closeBtn:hover {
+  background-color: #c0c0c0;
+  color: black;
 }
 
 .timer {
   color: white;
-  margin-top: 50px;
+  margin-top: 4px;
+  font-size: 30px;
+  font-weight: normal;
+  background-color: black;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #c0c0c0;
+  text-transform: uppercase;
+
+}
+
+li {
+  display: inline-block;
+  font-size: 15px;
+  list-style-type: none;
+  text-transform: uppercase;
+  padding: 1em;
+
+}
+
+.countstyle {
+  margin-left: -30px;
+  color: #C0C0C0;
+
+}
+
+
+li span {
+  font-size: 50px;
+  margin-left: -40px;
+  display: block;
+  color: #C0C0C0;
+
 }
 
 .logo {
   width: auto;
-  height: 100px;
+  height: 150px;
+  margin-top: 22px;
+  margin-left: -100px;
 
+}
+
+h2 {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  color: #c0c0c0;
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+.reset {
+  margin-top: 50px;
+}
+
+
+
+.front {
+  background:black;
+  border: 1px solid #B8B8B8;
+  border-radius: 4px;
+
+}
+
+
+
+
+
+.back {
+  background:black;
+  border: 1px solid #B8B8B8;
+  border-radius: 4px;
+}
+
+.instructions {
+  width: auto;
+  height: 73px;
+  margin:auto;
+  padding:45px;
 }

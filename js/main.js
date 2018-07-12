@@ -7,19 +7,33 @@ var modal = $("#simpleModal")[0];
 var modalBtn = $("#modalBtn")[0];
 var closeBtn = $(".closeBtn")[0];
 var winningCondition = 0;
-var sec = 30
+
+//var sec = 30;
+
+
+$(window).on('load', function(){
+    $("#instructionsModal").slideDown().show();
+    $(".closeBtn").click(function(){
+    $("#instructionsModal").slideUp().hide();
+  });
+
+ });
+
 
 var timer = setInterval(function() {
-   $('#Timer span').text(sec--);
-   if (sec == -2) {
-     alert("better luck next time!");
-      $('#Timer').fadeOut('fast');
+   $('#sec').text(sec--);
+     $("#GameOver").hide();
+   if (sec == -1) {
 
+      $('#Timer').fadeOut('fast');
       clearInterval(timer);
+      $("#GameOver").show();
+
+
    }
 }, 1000);
 
-$(".cards").addClass("selected");
+// $(".cards").addClass("selected");
   $(".cards").click(function(event){
     if(clicks == 1) {
       $(this).removeClass("selected");
@@ -36,7 +50,7 @@ $(".cards").addClass("selected");
 
           console.log(winningCondition);
           setTimeout(function(){
-             $("."+click1).remove();
+             $("."+click1).addClass("matched");
           },500);
 
           if(winningCondition == 8) {
@@ -49,8 +63,11 @@ $(".cards").addClass("selected");
       } else {
 
           setTimeout(function(){
-            $("."+click1).addClass("selected");
-            $("."+click2).addClass("selected");
+
+            $("." +click1).flip(false);
+            $("." +click2).flip(false);
+
+
           },500);
 
           console.log("not the right match");
@@ -66,11 +83,9 @@ $(".cards").addClass("selected");
 
   $(".reset").click(function(){
 
-  location.reload();
+    location.reload();
 
   });
-
-
 
 
 $(closeBtn).on("click", closeModal);
@@ -85,5 +100,6 @@ $(modalBtn).on("click", openModal);
     modal.style.display = "block";
   }
 
+  $(".cards").flip();
 
 });
