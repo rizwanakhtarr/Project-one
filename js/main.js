@@ -8,12 +8,13 @@ var modalBtn = $("#modalBtn")[0];
 var closeBtn = $(".closeBtn")[0];
 var winningCondition = 0;
 
-var sec = 0;
+var sec = 60;
 
 
 $(window).on('load', function(){
     $("#instructionsModal").slideDown().show();
     $(".closeBtn").click(function(){
+
     $("#instructionsModal").slideUp().hide();
   });
 
@@ -33,7 +34,7 @@ var timer = setInterval(function() {
    }
 }, 1000);
 
-// $(".cards").addClass("selected");
+
   $(".cards").click(function(event){
     if(clicks == 1) {
       $(this).removeClass("selected");
@@ -70,7 +71,7 @@ var timer = setInterval(function() {
 
           },500);
 
-          console.log("not the right match");
+
 
       }
 
@@ -79,14 +80,13 @@ var timer = setInterval(function() {
   });
 
 
-
-
+function reset(){
   $(".reset").click(function(){
 
     location.reload();
 
   });
-
+}
 
 $(closeBtn).on("click", closeModal);
 $(modalBtn).on("click", openModal);

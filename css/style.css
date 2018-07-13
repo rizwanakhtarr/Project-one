@@ -52,7 +52,7 @@ h1 {
 .timeLeft {
   width: auto;
   height: 30px;
-  margin-left: 49px;
+  margin-left: 28px;
   margin-bottom: -25px;
   padding: 8px;
   background: black;
@@ -219,7 +219,7 @@ h6 {
   height: 50px;
   padding: 6px;
   border: 1px solid #c0c0c0;
-  
+
 }
 
 .front {
@@ -233,8 +233,8 @@ h6 {
   width: auto;
   margin: auto;
   height: 81px;
-  padding-top: 60px;
-
+  padding-top: 181px;
+  padding-bottom: 45px;
 }
 .frontmodal {
   background:black;
@@ -246,7 +246,13 @@ h6 {
 
 }
 
-
+.congratz {
+  margin: auto;
+  width: auto;
+  height: 100px;
+  padding-top: 50px;
+  padding-bottom: 67px;
+}
 
 .back {
   background:black;
