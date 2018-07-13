@@ -12,19 +12,24 @@ var sec = 60;
 
 
 $(window).on('load', function(){
+
     $("#instructionsModal").slideDown().show();
     $(".closeBtn").click(function(){
 
     $("#instructionsModal").slideUp().hide();
+
   });
 
  });
 
-
+$("#startTime").click(function(){
 var timer = setInterval(function() {
+
+
    $('#sec').text(sec--);
      $("#GameOver").hide();
-   if (sec == -1) {
+
+     if (sec == -1 ) {
 
       $('#Timer').fadeOut('fast');
       clearInterval(timer);
@@ -33,7 +38,7 @@ var timer = setInterval(function() {
 
    }
 }, 1000);
-
+});
 
   $(".cards").click(function(event){
     if(clicks == 1) {
@@ -57,6 +62,7 @@ var timer = setInterval(function() {
           if(winningCondition == 8) {
             setTimeout(function(){
               modal.style.display = "block";
+              clearInterval(timer);
             },500)
 
           }
