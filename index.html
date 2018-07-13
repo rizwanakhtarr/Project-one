@@ -4,11 +4,8 @@
     <meta charset="utf-8">
     <title>AvenGSNAP</title>
     <link rel="stylesheet" href="css\style.css">
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery.flip.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
@@ -199,11 +196,10 @@
     <div id= "GameOver" class="modal">
       <div class="modal-content">
         <span class="closeBtn">&times</span>
-        <h1>Better Luck Next time</h1>
+        <img src="images/gameover.png" class="gameover">
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <img src="images\startagain.png" class="startagain">
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 
       </div>
@@ -218,18 +214,17 @@
         <img src="images\instructionslogo.png" class="instructionslogo">
 
         <h5>
-
-          When you see this card on screen:
-
-          <div class="front">
-            <img src="images\cardback.png">
-          </div>
-
-
+        <p>When you see this card on screen:</p>
         </h5>
 
+        <div>
+        <h6>Click it and see if you can find its matching pair.<br><br> There are 16 cards in total and so 8 different avengers. <br><br>Good Luck! you only have a minute to win!Select the button whenever your ready</h6>
 
+        </div>
 
+        <div class="frontmodal">
+          <img src="images\cardback.png">
+        </div>
       </div>
     </div>
 

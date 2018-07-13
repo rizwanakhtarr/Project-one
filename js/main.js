@@ -8,7 +8,7 @@ var modalBtn = $("#modalBtn")[0];
 var closeBtn = $(".closeBtn")[0];
 var winningCondition = 0;
 
-//var sec = 30;
+var sec = 0;
 
 
 $(window).on('load', function(){

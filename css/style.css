@@ -170,6 +170,13 @@ li span {
 
 }
 
+.instructionslogo {
+  margin: auto;
+  width: auto;
+  height: 40px;
+  margin-top: 0px;
+}
+
 h2 {
   color: white;
 }
@@ -189,11 +196,31 @@ h5 {
   text-transform: uppercase;
 
 }
+
+h6 {
+  color: white;
+  width: 420%;
+  font-size: 27px;
+  text-align: left;
+  margin:auto;
+  padding-left: 266px;
+  margin-top: -42px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+
+}
 .reset {
   margin-top: 50px;
 }
 
-
+.startagain {
+  margin:auto;
+  width: auto;
+  height: 50px;
+  padding: 6px;
+  border: 1px solid #c0c0c0;
+  
+}
 
 .front {
   background:black;
@@ -202,7 +229,22 @@ h5 {
 
 }
 
+.gameover {
+  width: auto;
+  margin: auto;
+  height: 81px;
+  padding-top: 60px;
 
+}
+.frontmodal {
+  background:black;
+  border: 1px solid #B8B8B8;
+  border-radius: 4px;
+  float: right;
+  margin-top: -30px;
+  margin-right: 215px;
+
+}
 
 
 
@@ -217,4 +259,5 @@ h5 {
   height: 73px;
   margin:auto;
   padding:45px;
+
 }
