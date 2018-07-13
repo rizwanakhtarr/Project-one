@@ -4,56 +4,235 @@
     <meta charset="utf-8">
     <title>AvenGSNAP</title>
     <link rel="stylesheet" href="css\style.css">
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery.flip.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
     <div class="containerHeader">
+
+
+      <div>
+      <a href=""><img src="images\avengerslogo.png" class="resetButton"></a>
+      </div>
+      <!-- <div class="reset"><button onclick="countdownTimeStart()">Reset Game</button>
+
+      </div> -->
       <div><img src="images\avengersassemble.png" class="logo"></div>
       <div id="Timer" class="timer">
-      Timer: <span>30</span> Seconds
+        <img src="images\timeleft.png" class="timeLeft" >
+         <!-- //<h4 id="head">Time Left:</h1> -->
+          <ul>
+
+            <li><span>00</span><p class="countstyle">Minutes</p></li>
+            <li><span id="sec">30</span><p class="countstyle">Seconds<p></li>
+          </ul>
       </div>
     </div>
-    <div class="container">
-      <section>
-        <div class="cards capt"><img src="images\captain america.jpg"  > <p></p></div>
-        <div class="cards ironman"><img src="images\ironman.png" ><p>?</p></div>
-        <div class="cards Hulk"><img src="images\Hulk.png"><p>?</p></div>
-        <div class="cards Hulk"><img src="images\Hulk.png"><p>?</p></div>
-        <div class="cards capt"><img src="images\captain america.jpg"><p>?</p></div>
-        <div class="cards ironman"><img src="images\ironman.png" ><p>?</p></div>
-        <div class="cards bpanther"><img src="images\black panther.jpg"><p>?</p></div>
-        <div class="cards wintersoldier"><img src="images\wintersoldier.jpg"><p>?</p></div>
-        <div class="cards bpanther"><img src="images\black panther.jpg"><p>?</p></div>
-        <div class="cards thor"><img src="images\thor.jpg"><p>?</p></div>
-        <div class="cards spiderman"><img src="images\spiderman.png"><p>?</p></div>
-        <div class="cards thor"><img src="images\thor.jpg"><p>?</p></div>
-        <div class="cards hawkeye"><img src="images\hawkeye.jpg"><p>?</p></div>
-        <div class="cards hawkeye"><img src="images\hawkeye.jpg"><p>?</p></div>
-        <div class="cards wintersoldier"><img src="images\wintersoldier.jpg"><p>?</p></div>
-        <div class="cards spiderman"><img src="images\spiderman.png"><p>?</p></div>
-    </div>
 
-    <button id = "modalBtn" class="button">Click Here</button>
+      <section>
+
+        <div class="cards capt">
+          <div class="front" >
+            <img src="images\cardback.png">
+          </div>
+          <div class="back">
+            <img src="images\captain america.png">
+          </div>
+        </div>
+
+        <div class="cards capt">
+          <div class="front">
+            <img src="images\cardback.png">
+          </div>
+          <div class="back">
+            <img src="images\captain america.png">
+          </div>
+        </div>
+
+
+
+
+        <div class="cards ironman">
+          <div class="front">
+            <img src="images\cardback.png">
+          </div>
+          <div class="back">
+            <img src="images\ironman.png">
+          </div>
+        </div>
+
+        <div class="cards Hulk">
+          <div class="front">
+            <img src="images\cardback.png">
+          </div>
+          <div class="back">
+            <img src="images\Hulk.png">
+          </div>
+        </div>
+
+        <div class="cards Hulk">
+          <div class="front">
+            <img src="images\cardback.png">
+          </div>
+          <div class="back">
+            <img src="images\Hulk.png">
+          </div>
+        </div>
+
+
+        <div class="cards ironman">
+          <div class="front">
+            <img src="images\cardback.png">
+          </div>
+          <div class="back">
+            <img src="images\ironman.png">
+          </div>
+        </div>
+
+        <div class="cards bpanther">
+          <div class="front">
+            <img src="images\cardback.png">
+          </div>
+          <div class="back">
+            <img src="images\black panther.png">
+          </div>
+        </div>
+
+        <div class="cards wintersoldier">
+          <div class="front">
+            <img src="images\cardback.png">
+          </div>
+          <div class="back">
+            <img src="images\wintersoldier.png">
+          </div>
+        </div>
+
+        <div class="cards bpanther">
+          <div class="front">
+            <img src="images\cardback.png">
+          </div>
+          <div class="back">
+            <img src="images\black panther.png">
+          </div>
+        </div>
+
+        <div class="cards thor">
+          <div class="front">
+            <img src="images\cardback.png">
+          </div>
+          <div class="back">
+            <img src="images\thor.png">
+          </div>
+        </div>
+
+        <div class="cards spiderman">
+          <div class="front">
+            <img src="images\cardback.png">
+          </div>
+          <div class="back">
+            <img src="images\spiderman.png">
+          </div>
+        </div>
+
+        <div class="cards thor">
+          <div class="front">
+            <img src="images\cardback.png">
+          </div>
+          <div class="back">
+            <img src="images\thor.png">
+          </div>
+        </div>
+
+        <div class="cards hawkeye">
+          <div class="front">
+            <img src="images\cardback.png">
+          </div>
+          <div class="back">
+            <img src="images\hawkeye..png">
+          </div>
+        </div>
+
+        <div class="cards hawkeye">
+          <div class="front">
+            <img src="images\cardback.png">
+          </div>
+          <div class="back">
+            <img src="images\hawkeye..png">
+          </div>
+        </div>
+
+        <div class="cards wintersoldier">
+          <div class="front">
+            <img src="images\cardback.png">
+          </div>
+          <div class="back">
+            <img src="images\wintersoldier.png">
+          </div>
+        </div>
+
+        <div class="cards spiderman">
+          <div class="front">
+            <img src="images\cardback.png">
+          </div>
+          <div class="back">
+            <img src="images\spiderman.png">
+          </div>
+        </div>
 
     <div id="simpleModal" class="modal">
       <div class="modal-content">
         <span class="closeBtn">&times</span>
-        <h1>Congratulations for Completing the Game Successfully!</h1>
+        <img src="images\congratz.png" class="congratz">
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href=""><img src="images\startagain.png" class="startagain"></a>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <img src="images\symbol.png" class="congratz">
 
 
       </div>
     </div>
-    <p id="demo"></p>
-    <div class="reset"><button onclick="countdownTimeStart()">Reset Game</button>
 
+    <div id= "GameOver" class="modal">
+      <div class="modal-content">
+        <span class="closeBtn" id="yourButton">&times</span>
+        <img src="images/gameover.png" class="gameover">
+
+        <a href=""><img src="images\startagain.png" class="startagain"></a>
+
+
+
+      </div>
     </div>
+
+    <div id= "instructionsModal" class="modal">
+      <div class="modal-content">
+        <span class="closeBtn">&times</span>
+
+        <img src="images\modalInstructions.png" class="instructions">
+
+        <img src="images\instructionslogo.png" class="instructionslogo">
+
+        <h5>
+        <p>When you see this card on screen:</p>
+        </h5>
+
+        <div>
+        <h6>Click it and see if you can find its matching pair.<br><br> There are 16 cards in total and so 8 different avengers. <br><br>Good Luck! you only have a minute to win!Select the button whenever your ready</h6>
+
+        </div>
+
+        <div class="frontmodal">
+          <img src="images\cardback.png">
+        </div>
+      </div>
+    </div>
+
+
+    <p id="demo"></p>
+
+
+
+
   </body>
 </html>
